@@ -1,0 +1,494 @@
+0
+1
+00:00:00,320 --> 00:00:03,540
+All right guys so here comes your challenge.
+1
+
+2
+00:00:03,540 --> 00:00:09,570
+So if you head over to the course resources for this lesson you should be able to discover a link that
+2
+
+3
+00:00:09,570 --> 00:00:11,740
+takes you to this code sandbox
+3
+
+4
+00:00:11,760 --> 00:00:18,630
+I prepared for you. And the first thing to do as always is to go ahead and fork the code sandbox.
+4
+
+5
+00:00:18,840 --> 00:00:21,340
+That way you'll be able to keep a copy of your work.
+5
+
+6
+00:00:21,390 --> 00:00:26,580
+And if you're logged in you'll be able to save it and take a look at it and come back to it later on
+6
+
+7
+00:00:26,580 --> 00:00:27,300
+if you need to.
+7
+
+8
+00:00:28,260 --> 00:00:30,320
+So in this challenge there's a couple of steps
+8
+
+9
+00:00:30,390 --> 00:00:32,330
+I want you to achieve.
+9
+
+10
+00:00:32,550 --> 00:00:39,680
+I want you to go through each of these comments step by step and try to complete the challenge.
+10
+
+11
+00:00:39,690 --> 00:00:43,420
+So in this case we want to create a React app from scratch.
+11
+
+12
+00:00:43,420 --> 00:00:50,040
+So notice how inside our index.js I've kindly removed all the code for you so that you get extra
+12
+
+13
+00:00:50,040 --> 00:00:52,500
+practice creating React apps.
+13
+
+14
+00:00:52,500 --> 00:00:59,100
+But inside our index.html there is the predictable, div with the id of root.
+14
+
+15
+00:00:59,400 --> 00:01:02,410
+So if you watched the last lesson you should know what to do.
+15
+
+16
+00:01:02,460 --> 00:01:10,680
+And by the end of this challenge you should have created a website using React that has a h1 heading,
+16
+
+17
+00:01:11,070 --> 00:01:13,590
+a unordered list so a bunch of bullet points
+17
+
+18
+00:01:13,590 --> 00:01:16,050
+and it should contain three list elements.
+18
+
+19
+00:01:17,160 --> 00:01:22,780
+So for example, I've created a list of my favorite foods.
+19
+
+20
+00:01:22,800 --> 00:01:26,180
+Yep it's Angela talking about food again.
+20
+
+21
+00:01:26,520 --> 00:01:33,930
+But here I've got an h1 with a heading and I've got three unordered list items listing all of my favorite
+21
+
+22
+00:01:33,930 --> 00:01:35,180
+foods.
+22
+
+23
+00:01:35,220 --> 00:01:37,220
+So now is the time for action.
+23
+
+24
+00:01:37,230 --> 00:01:42,210
+Go ahead and pause the video and try to complete this challenge and then head back over here and we'll
+24
+
+25
+00:01:42,210 --> 00:01:44,000
+run through the solution together.
+25
+
+26
+00:01:44,040 --> 00:01:52,650
+I'll stay quiet now and let you do your work.
+26
+
+27
+00:01:52,910 --> 00:01:53,210
+All right.
+27
+
+28
+00:01:53,230 --> 00:01:54,850
+So how did that go?
+28
+
+29
+00:01:54,860 --> 00:02:00,230
+Let's walk through the solution together and remember if you haven't given it a go, I really urge you
+29
+
+30
+00:02:00,230 --> 00:02:00,770
+to do it.
+30
+
+31
+00:02:00,770 --> 00:02:05,300
+I know there's a lot of repetition but it's going to build muscle memory and it's gonna make you a better
+31
+
+32
+00:02:05,300 --> 00:02:06,270
+developer.
+32
+
+33
+00:02:06,320 --> 00:02:08,480
+So let's tackle the first comment,
+33
+
+34
+00:02:08,480 --> 00:02:11,570
+Create a React app from scratch.
+34
+
+35
+00:02:11,570 --> 00:02:18,170
+So remember that we've got our two dependencies which are installed into our project but in order to
+35
+
+36
+00:02:18,170 --> 00:02:20,640
+use it we have to import them.
+36
+
+37
+00:02:20,720 --> 00:02:32,980
+So let's import React from the React module and then let's import the ReactDOM from the react-dom module.
+37
+
+38
+00:02:33,140 --> 00:02:38,750
+And now we can use them and the method that we want to use is render
+38
+
+39
+00:02:38,750 --> 00:02:40,710
+and that comes from the ReactDOM.
+39
+
+40
+00:02:40,730 --> 00:02:44,780
+So let's go ahead and do ReactDOM.render.
+40
+
+41
+00:02:45,020 --> 00:02:49,590
+And in this method we have to provide two things at the minimum.
+41
+
+42
+00:02:49,620 --> 00:02:52,770
+So the first thing is what to show
+42
+
+43
+00:02:52,820 --> 00:02:55,850
+and the second is where to show it.
+43
+
+44
+00:02:57,230 --> 00:03:00,650
+So out of these two things, what do we want to show?
+44
+
+45
+00:03:00,650 --> 00:03:03,110
+Well we want to show a h1 heading.
+45
+
+46
+00:03:03,620 --> 00:03:07,170
+So let's add that into the what to show.
+46
+
+47
+00:03:07,210 --> 00:03:13,450
+So let's create an h1 heading and mine is, as always, going to be my favorite foods.
+47
+
+48
+00:03:13,790 --> 00:03:17,180
+And then in terms of the where to show it
+48
+
+49
+00:03:17,180 --> 00:03:24,230
+remember that we have our  div in here with that particular id and we can get hold of this element
+49
+
+50
+00:03:24,350 --> 00:03:28,760
+to insert our React elements into that div.
+50
+
+51
+00:03:28,790 --> 00:03:35,930
+So the where to show it is going to require some JavaScript, so document.getElementById and the
+51
+
+52
+00:03:35,930 --> 00:03:40,100
+id is the string which was called root.
+52
+
+53
+00:03:40,100 --> 00:03:47,750
+So now if we hit save and we refresh our little browser on the right, then we should see our h1 showing
+53
+
+54
+00:03:47,750 --> 00:03:48,990
+up right now.
+54
+
+55
+00:03:49,010 --> 00:03:53,180
+So we've done step one, we've done step two
+55
+
+56
+00:03:53,180 --> 00:03:55,060
+so now let's tackle this part.
+56
+
+57
+00:03:55,160 --> 00:03:59,630
+It should also display an unordered list so a bunch of bullet points.
+57
+
+58
+00:03:59,630 --> 00:04:05,250
+Now remember that the render method can only accept one element.
+58
+
+59
+00:04:05,330 --> 00:04:10,790
+So we can't simply just tag our unordered list over here at the end.
+59
+
+60
+00:04:10,790 --> 00:04:19,510
+But what we can do instead is we can firstly format our method a little bit. And instead of having two
+60
+
+61
+00:04:19,560 --> 00:04:24,540
+HTML elements, we can wrap them inside a div.
+61
+
+62
+00:04:24,620 --> 00:04:29,530
+So let me go ahead and create that div and then put the closing tag right here
+62
+
+63
+00:04:29,570 --> 00:04:32,040
+just before that comma.
+63
+
+64
+00:04:32,090 --> 00:04:38,550
+So this block is one thing and then let's add a new line over here.
+64
+
+65
+00:04:38,570 --> 00:04:46,580
+So now we're abiding by the laws of the render method where we're only rendering a single element
+65
+
+66
+00:04:46,580 --> 00:04:50,420
+but nobody said that the additional  element can't have children.
+66
+
+67
+00:04:50,630 --> 00:04:57,410
+So inside the div, we've got two child elements a ul and h1.
+67
+
+68
+00:04:58,550 --> 00:05:01,790
+So now we can continue building out the rest of our app.
+68
+
+69
+00:05:02,000 --> 00:05:06,020
+So inside our unordered list we're going to create three list elements.
+69
+
+70
+00:05:06,070 --> 00:05:08,900
+So let's go ahead and add three lis.
+70
+
+71
+00:05:08,900 --> 00:05:10,430
+And if you hit save
+71
+
+72
+00:05:10,460 --> 00:05:14,780
+so COMMAND + S or CONTROL + S on Windows or go to file and save
+72
+
+73
+00:05:14,840 --> 00:05:16,870
+and just look at that shortcut there
+73
+
+74
+00:05:17,090 --> 00:05:23,450
+then it'll actually reformat your code and pretty far everything every time you do that makes it easier
+74
+
+75
+00:05:23,450 --> 00:05:24,540
+to read.
+75
+
+76
+00:05:24,590 --> 00:05:33,260
+So notice how just now when predefined are code, it actually changed this li from a normal li where
+76
+
+77
+00:05:33,260 --> 00:05:38,640
+we can add something in the middle to a self closing tag.
+77
+
+78
+00:05:38,690 --> 00:05:43,610
+So remember tags like image or link are self closing.
+78
+
+79
+00:05:43,610 --> 00:05:53,270
+They don't have anything in between the tags unlike the list element or the ul or the h1 or the paragraph.
+79
+
+80
+00:05:53,270 --> 00:05:58,910
+So that's just something to be aware of that when you hit save sometimes it reformats your code and update
+80
+
+81
+00:05:58,910 --> 00:06:00,140
+certain things.
+81
+
+82
+00:06:00,140 --> 00:06:06,050
+And in the case where you have HTML elements with nothing inside, so no children, it'll turn it into a
+82
+
+83
+00:06:06,050 --> 00:06:08,290
+self closing tag.
+83
+
+84
+00:06:08,360 --> 00:06:13,750
+So let me go ahead and add some content to our list elements so it won't think that it's empty.
+84
+
+85
+00:06:13,820 --> 00:06:23,280
+So let's add our good old bacon as a list element and then maybe some noodles
+85
+
+86
+00:06:23,450 --> 00:06:24,590
+Always good.
+86
+
+87
+00:06:24,620 --> 00:06:33,080
+And finally I'm going to add some veg but then again who am I kidding? Adding mushrooms in there. I think it's
+87
+
+88
+00:06:33,080 --> 00:06:35,240
+more likely to be something meaty.
+88
+
+89
+00:06:35,240 --> 00:06:35,510
+All right.
+89
+
+90
+00:06:35,540 --> 00:06:43,640
+So now we have created a website with an h1, an unordered list with three list items and they're
+90
+
+91
+00:06:43,730 --> 00:06:54,100
+all being rendered inside this div with the id of root. Did you manage to solve this challenge?
+91
+
+92
+00:06:54,100 --> 00:06:57,880
+If not or if any of this was confusing at all
+92
+
+93
+00:06:57,880 --> 00:07:04,600
+be sure to have a play around with this completed code. So I'll include a link to this completed challenge
+93
+
+94
+00:07:04,900 --> 00:07:10,480
+in the course resources and you can have a mess around with it and  match up your code with mine
+94
+
+95
+00:07:10,570 --> 00:07:17,500
+if you got any errors. Once you're comfortable with this idea of rendering HTML  elements into
+95
+
+96
+00:07:17,560 --> 00:07:21,750
+the DOM using React, then head over to the next lesson.
+96
+
+97
+00:07:21,910 --> 00:07:29,920
+We're going to talk more about adding JavaScript expressions inside these HTML elements using our 
+97
+
+98
+00:07:29,920 --> 00:07:32,720
+JSX. So for all of that and more
+98
+
+99
+00:07:32,770 --> 00:07:33,850
+I'll see you on the next lesson.
